@@ -19,5 +19,12 @@ namespace PinCodeTestUnit
             string actual = validate.PinCode_FirstLetter("A400088");
             Assert.AreEqual(actual, "A400088");
         }
+        [Test]
+        public void PincodeTest3()
+        {
+            PinCodeValidate validate = new PinCodeValidate();
+            string actual = validate.PinCode_LastLetter("400088A");
+            Assert.AreEqual(actual, "400088A");
+        }
     }
 }
